@@ -11,7 +11,8 @@
           "Microsoft.NET.Test.Sdk": "16.5.0",
           "NUnit": "3.12.0",
           "NUnit3TestAdapter": "3.16.1",
-          "SpecFlow": "3.4.31"
+          "SpecFlow": "3.4.31",
+          "SpecFlow.xUnit": "3.4.31"
         },
         "runtime": {
           "Fahrafellner_Test.dll": {}
@@ -500,6 +501,25 @@
         },
         "runtime": {
           "lib/netstandard2.0/TechTalk.SpecFlow.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.31.13239"
+          }
+        }
+      },
+      "SpecFlow.Tools.MsBuild.Generation/3.4.31": {
+        "dependencies": {
+          "SpecFlow": "3.4.31"
+        }
+      },
+      "SpecFlow.xUnit/3.4.31": {
+        "dependencies": {
+          "SpecFlow": "3.4.31",
+          "SpecFlow.Tools.MsBuild.Generation": "3.4.31",
+          "Xunit.SkippableFact": "1.3.12",
+          "xunit.core": "2.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/TechTalk.SpecFlow.xUnit.SpecFlowPlugin.dll": {
             "assemblyVersion": "3.4.0.0",
             "fileVersion": "3.4.31.13239"
           }
@@ -1225,6 +1245,62 @@
             "fileVersion": "1.3.7.0"
           }
         }
+      },
+      "Validation/2.4.18": {
+        "runtime": {
+          "lib/netstandard1.3/Validation.dll": {
+            "assemblyVersion": "2.4.0.0",
+            "fileVersion": "2.4.18.58985"
+          }
+        }
+      },
+      "xunit.abstractions/2.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/xunit.abstractions.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "xunit.core/2.4.0": {
+        "dependencies": {
+          "xunit.extensibility.core": "2.4.0",
+          "xunit.extensibility.execution": "2.4.0"
+        }
+      },
+      "xunit.extensibility.core/2.4.0": {
+        "dependencies": {
+          "xunit.abstractions": "2.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/xunit.core.dll": {
+            "assemblyVersion": "2.4.0.4049",
+            "fileVersion": "2.4.0.4049"
+          }
+        }
+      },
+      "xunit.extensibility.execution/2.4.0": {
+        "dependencies": {
+          "xunit.extensibility.core": "2.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/xunit.execution.dotnet.dll": {
+            "assemblyVersion": "2.4.0.4049",
+            "fileVersion": "2.4.0.4049"
+          }
+        }
+      },
+      "Xunit.SkippableFact/1.3.12": {
+        "dependencies": {
+          "Validation": "2.4.18",
+          "xunit.extensibility.execution": "2.4.0"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Xunit.SkippableFact.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.12.62151"
+          }
+        }
       }
     }
   },
@@ -1478,6 +1554,20 @@
       "sha512": "sha512-U+20iH8ihfz1ZKcjgJMa1lcNag4z3f9KT5J0rqP3ye/zeHthvLdTfkx4gwCrChKNHM+fpmoGLOyodC+muieY+Q==",
       "path": "specflow/3.4.31",
       "hashPath": "specflow.3.4.31.nupkg.sha512"
+    },
+    "SpecFlow.Tools.MsBuild.Generation/3.4.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kN7HV3eLCBTUPtfMszPH2258/x1L+QdPEC8L+EhtDO05FmF5nUpSp2WQCuSRNmZ60gYdbWfjQ+hXvsFT2zEn+g==",
+      "path": "specflow.tools.msbuild.generation/3.4.31",
+      "hashPath": "specflow.tools.msbuild.generation.3.4.31.nupkg.sha512"
+    },
+    "SpecFlow.xUnit/3.4.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ea/N0nn11xS8XIYW679nUXK2HUxQSxbwKCTYyTPVpPt+w6gTGbAMHXHSOYgIpHk5MNwR7HDWAZFVFBDeEB+DOw==",
+      "path": "specflow.xunit/3.4.31",
+      "hashPath": "specflow.xunit.3.4.31.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",
@@ -1954,6 +2044,48 @@
       "sha512": "sha512-lMTNZWp6a6KGkgMc3rW41D3b0REb03fQycfb/2bNBpiUtsbGYYI/LrAhnX52vrHRe4ze7JxbtpWF1Y5ohdpipQ==",
       "path": "utf8json/1.3.7",
       "hashPath": "utf8json.1.3.7.nupkg.sha512"
+    },
+    "Validation/2.4.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NfvWJ1QeuZ1FQCkqgXTu1cOkRkbNCfxs4Tat+abXLwom6OXbULVhRGp34BTvVB4XPxj6VIAl7KfLfStXMt/Ehw==",
+      "path": "validation/2.4.18",
+      "hashPath": "validation.2.4.18.nupkg.sha512"
+    },
+    "xunit.abstractions/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vItLB0WkaKg0426RgWq+ZdXH6D+YV/uH28C0weWMOBnVx7I+luHuEYss9hoOngpkiN5kUpLvh9VZRx1H2sk59A==",
+      "path": "xunit.abstractions/2.0.2",
+      "hashPath": "xunit.abstractions.2.0.2.nupkg.sha512"
+    },
+    "xunit.core/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BJ/O/tPEcHUCwQYuwqXoYccTMyw6B5dA6yh7WxWWBhKbjqTsG9RWL0nCQXM5yQYJwUuFzBkiXDPN1BO6UdBB4Q==",
+      "path": "xunit.core/2.4.0",
+      "hashPath": "xunit.core.2.4.0.nupkg.sha512"
+    },
+    "xunit.extensibility.core/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qr/KrR6uukHXD9e/lLQjyCPfMEDuvvhNFDzsYzCF2kKlYKiqcADfUvA9Q68rBtKFtwHFeghjWEuv15KoGD2SfA==",
+      "path": "xunit.extensibility.core/2.4.0",
+      "hashPath": "xunit.extensibility.core.2.4.0.nupkg.sha512"
+    },
+    "xunit.extensibility.execution/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-252Dzn7i5bMPKtAL15aOP3qJhxKd+57I8ldwIQRJa745JxQuiBu5Da0vtIISVTtc3buRSkBwVnD9iUzsEmCzZA==",
+      "path": "xunit.extensibility.execution/2.4.0",
+      "hashPath": "xunit.extensibility.execution.2.4.0.nupkg.sha512"
+    },
+    "Xunit.SkippableFact/1.3.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CQETcfKyEq6Uki9pExNZI5sEHeKqdt9Fc4pdLHu1mgaboQp0aI4W45M+UUnG6Zc2hxWTDmbD2AFVKA1wjU19YA==",
+      "path": "xunit.skippablefact/1.3.12",
+      "hashPath": "xunit.skippablefact.1.3.12.nupkg.sha512"
     }
   }
 }

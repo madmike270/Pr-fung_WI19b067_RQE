@@ -5,30 +5,15 @@
  I want to be told the result of specific operations
 
 @mytag
-
-Scenario: CalcPi
-
- Given null
- Then pi is returned
-
  Scenario: CalcSin
-
- Given the first number is 50
- Then sin is -0.26
-
-
+     Given the number is Pi
+     Then sinus is 0
+ 
 Scenario: CalcCos
-
- Given the first number is 50
- Then Cos is 0.96
-
-
-
+     Given the number is Pi
+     Then cos is -1
+ 
 Scenario: CalcTan
-
- Given the first number is 50
-
- Then tan is -0.27
-
-
+     Given the number is Pi
+     Then tang is 0
 
